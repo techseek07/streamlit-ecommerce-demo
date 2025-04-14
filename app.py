@@ -7,9 +7,9 @@ def product_catalog():
     
     # Dummy products list (you can add your own images in the assets folder)
     products = [
-        {"name": "Wireless Headphones", "price": "$50", "image": "assets/product1.jpg", "description": "High-quality sound."},
-        {"name": "Smart Watch", "price": "$120", "image": "assets/product2.jpg", "description": "Keep track of your health."},
-        {"name": "Laptop", "price": "$800", "image": "assets/product3.jpg", "description": "Powerful performance."}
+        {"name": "Wireless Headphones", "price": "$50", "image": "assets/headphones.jpg", "description": "High-quality sound."},
+        {"name": "Smart Watch", "price": "$120", "image": "assets/smart_watch.jpg", "description": "Keep track of your health."},
+        {"name": "Laptop", "price": "$800", "image": "assets/laptop.jpg", "description": "Powerful performance."}
     ]
     
     if search_term:
