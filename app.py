@@ -169,11 +169,23 @@ if category != "All":
 # -----------------------------
 # Top Logo and Title
 # -----------------------------
+# -----------------------------
+# Top Logo and Title
+# -----------------------------
 col_left, col_center, col_right = st.columns([1, 2, 1])
 with col_center:
-    st.image("assets/logo.png", width=200)
-    st.markdown("<h1 style='text-align: center;'>Welcome to Our E-Commerce Website</h1>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align: center; font-size: 18px;'>Explore a seamless shopping experience!</p>", unsafe_allow_html=True)
+    st.image("assets/logo.png", width=1000)  # Wider logo
+
+    # Center the entire heading line block, not the text inside
+    st.markdown("""
+        <div style='display: flex; justify-content: center; width: 100%;'>
+            <h1 style='white-space: nowrap;'>Welcome to Our E-Commerce Website</h1>
+        </div>
+        <div style='text-align: center;'>
+            <p style='font-size: 18px;'>Explore a seamless shopping experience!</p>
+        </div>
+    """, unsafe_allow_html=True)
+
 
 st.markdown("---")
 
